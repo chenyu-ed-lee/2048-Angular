@@ -1,4 +1,5 @@
-<div id="content" ng-controller="GameController as ctrl">
+<div id="content" ng-controller='GameController as ctrl'>
+  <!-- heading -->
   <div id="heading" class="row">
     <h1 class="title">2048</h1>
     <div class="scores-container">
@@ -23,4 +24,25 @@
         <a class="retry-button" ng-click='ctrl.newGame()'>Try again</a>
       </div>
     </div>
+
+    <div id="win" ng-if="ctrl.game.win" class="row game-overlay">
+      You win!
+
+      <div class="lower">
+        <a class="retry-button" ng-click='ctrl.newGame()'>Try again</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="game-explanation">
+    <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+  </p>
+  <hr>
+
+  <p>
+    <strong class="important">NOTE:</strong> This game was written using AngularJS.
+  </p>
+
+  <hr>
+
 </div>
