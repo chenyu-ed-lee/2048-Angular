@@ -1,6 +1,6 @@
 ## 2048 on Angular
 
-Most of logics came from here: https://github.com/fullstackio/ng2048
+A lot of styling and some logics came from these awesome people (fullstackio).
 
 Node is added on top of it.
 
